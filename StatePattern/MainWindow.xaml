@@ -1,0 +1,21 @@
+﻿<Window x:Class="StatePattern.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StatePattern"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="700">
+    <Grid>
+        <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="267" Margin="10,10,0,0" VerticalAlignment="Top" Width="672">
+            <Ellipse x:Name="ellipseLight"
+            Fill="Green"
+            Width="200"
+            Height="200"
+            Canvas.Left="240"
+            Canvas.Top="40"/>
+        </Canvas>
+        <Button Content="Change Light" HorizontalAlignment="Left" Margin="310,323,0,0" VerticalAlignment="Top" Width="80" Click="ChangeLightBtn"/>
+        <Label x:Name="timerLabel" HorizontalAlignment="Left" Margin="327,292,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
